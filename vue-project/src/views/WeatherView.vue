@@ -1,0 +1,3 @@
+<script setup>
+import { createRouter } from 'vue-router'
+</script>
