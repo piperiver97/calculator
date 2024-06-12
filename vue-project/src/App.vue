@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import Calculator from './components/Calculator.vue'
 </script>
 
 <template>
@@ -7,18 +8,29 @@ import { RouterLink, RouterView } from 'vue-router'
     <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <!-- <HelloWorld msg="You did it!" /> -->
+      <h1>Calculator</h1>
 
       <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/converter">Converter</router-link> |
+        <router-link to="/">Calculator</router-link> 
+        <router-link to="/converter">Converter</router-link> 
         <router-link to="/weather">Weather</router-link>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <router-view />
 </template>
+
+<script>
+
+export default {
+  name: 'App',
+  components: {
+    Calculator
+  }
+}
+</script>
 
 <style scoped>
 header {
@@ -37,10 +49,6 @@ nav {
   text-align: center;
   margin-top: 2rem;
 }
-
-/* nav a.router-link-exact-active {
-  color: var(--color-text);
-} */
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
