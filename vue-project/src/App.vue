@@ -1,38 +1,19 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Calculator from './components/Calculator.vue'
+
 </script>
 
-<template>
-  <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
+<template>   
+<header></header>
+    
+ <router-view />
 
-    <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-      <h1>Calculator</h1>
-
-      <nav>
-        <router-link to="/">Calculator</router-link> 
-        <router-link to="/converter">Converter</router-link> 
-        <router-link to="/weather">Weather</router-link>
-      </nav>
-    </div>
-  </header>
-
-  <router-view />
+ 
 </template>
 
-<script>
 
-export default {
-  name: 'App',
-  components: {
-    Calculator
-  }
-}
-</script>
-
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -90,4 +71,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->

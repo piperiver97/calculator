@@ -1,3 +1,9 @@
 <script setup>
-import { createRouter } from 'vue-router'
+import Header from '../components/Header.vue';
+import Footer from "../components/Footer.vue";
 </script>
+<template>
+    <Header />
+    <h1>Weather</h1>
+    <Footer></Footer>
+</template>
