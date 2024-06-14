@@ -1,8 +1,9 @@
 <script setup>
-import { createRouter } from 'vue-router'
-import Header from "@/components/Header.vue";
+import Converter from "@/components/Converter.vue";
 </script>
 <template>
-    <Header/>
-    <h1>Converter</h1>
+  <h1>Converter</h1>
+  <main>
+    <Converter></Converter>
+  </main>
 </template>

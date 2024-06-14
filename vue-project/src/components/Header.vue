@@ -7,7 +7,7 @@
 
       <ul class="nav nav-pills">
         <li class="nav-item">
-            <RouterLink to="/"><a href="#" class="nav-link active" aria-current="page">Calculator</a></RouterLink></li>
+            <RouterLink to="/"><a href="#" class="nav-link" aria-current="page">Calculator</a></RouterLink></li>
         <li class="nav-item">
             <router-link to="/converter"><a href="#" class="nav-link">Converter</a></router-link></li>
         <li class="nav-item">
