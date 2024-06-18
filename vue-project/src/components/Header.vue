@@ -18,7 +18,7 @@
 header {
   background-color: #93DDFF;
   padding: 10px; 
-  border-radius: 10px;
+  
 }
 
 .nav {
