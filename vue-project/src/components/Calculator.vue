@@ -6,18 +6,18 @@
             <div class="card-body">
               <input type="text" class="form-control mb-3" v-model="display" disabled />
               <div class="row">
-                <button class="btn btn-light col-3" v-for="n in numbers" :key="n" @click="appendNumber(n)">{{ n }}</button>
+                <button id="numbers" class="btn btn-light col-3" v-for="n in numbers" :key="n" @click="appendNumber(n)">{{ n }}</button>
               </div>
-              <div class="row mt-3">
+              <div id="signos" class="row mt-3">
                 <button class="btn btn-info col-3" @click="setOperation('+')">+</button>
                 <button class="btn btn-info col-3" @click="setOperation('-')">-</button>
                 <button class="btn btn-info col-3" @click="setOperation('*')">&times;</button>
                 <button class="btn btn-info col-3" @click="setOperation('/')">&divide;</button>
               </div>
               <div class="row mt-3">
-                <button class="btn btn-secondary col-3" @click="appendNumber('.')">.</button>
-                <button class="btn btn-danger col-3" @click="clearDisplay">CE</button>
-                <button class="btn btn-success col-6" @click="calculate">=</button>
+                <button id="decimal" class="btn btn-secondary col-3" @click="appendNumber('.')">.</button>
+                <button id="CE" class="btn btn-danger col-3" @click="clearDisplay">CE</button>
+                <button id="igual" class="btn btn-success col-6" @click="calculate">=</button>
               </div>
             </div>
           </div>
@@ -85,8 +85,23 @@
   </script>
   
   <style scoped>
+  .card-body{
+    background-color: rgb(160, 158, 158);
+    border-radius: 20px;
+    
+  }
   button {
     margin: 5px;
+    font-size: 30px
   }
+  #numbers{
+    background-color:white;
+  }
+  .btn-info{
+    background-color: #50aac7;
+    color: white;
+   
+  }
+  
   </style>
   
