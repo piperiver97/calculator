@@ -17,7 +17,7 @@
           <option v-for="currency in currencies" :key="currency" :value="currency">{{ currency }}</option>
         </select>
       </div>
-      <button @click="convert" class="btn btn-primary">Convert</button>
+      <button @click="convert" id="convert-btn" class="btn">Convert</button>
       <h3 v-if="result">{{ amount }} {{ fromCurrency }} = {{ result }} {{ toCurrency }}</h3>
     </div>
   </template>
@@ -60,6 +60,30 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top:80px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+  }
+
+  .form-group{
+    margin-top: 10px;
+  }
+
+
+  #convert-btn{
+    background-color: #4bade2;
+    color: white;
+    margin-top:30px;
+  }  
+
+  #convert-btn:hover{
+    color: #fff;
+  background-color: #93ddff;
+  border-color: #93ddff;
+  }  
+
+  h3{
+    margin-top: 20px;
   }
   </style>
   

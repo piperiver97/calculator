@@ -2,6 +2,7 @@
 import clearImage from '@/assets/sol.jpg';
 import cloudyImage from '@/assets/nubes.jpg';
 import rainImage from '@/assets/lluvia.jpg';
+import stormyImage from '@/assets/storm.jpg';
 import defaultImage from '@/assets/default.jpg';
 
 export default {
@@ -55,6 +56,8 @@ export default {
         case 'Nuboso':
         case 'Muy nuboso':
           return cloudyImage;
+        case 'Nuboso con tormenta':
+        return stormyImage;
         default:
           return defaultImage;
       }
@@ -72,12 +75,12 @@ export default {
 
 <template>
   <div class="container">
-    <h1>Weather</h1>
-    <button @click="fetchWeatherData" class="btn btn-primary">Check the weather!</button>
+    <!-- <h1>Weather</h1> -->
+    <button @click="fetchWeatherData" class="btn">Check the weather!</button>
     <div v-if="loading">Loading...</div>
     <div v-if="error" class="alert alert-danger">{{ error }}</div>
     <div v-if="cities && cities.length > 0">
-      <label for="city-select">Selecciona una ciudad:</label>
+      <label for="city-select">Select a city:</label>
       <select id="city-select" v-model="selectedCity" @change="updateWeather">
         <option v-for="city in cities" :key="city.id" :value="city">{{ decode(city.name) }}</option>
       </select>
@@ -121,5 +124,22 @@ select {
   display: block;
   margin: 10px auto;
 }
+
+.btn{
+  background-color: #4bade2;
+  color: white;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #93ddff;
+  border-color: #93ddff;
+}
+
+.weather-card {
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
 </style>
 
