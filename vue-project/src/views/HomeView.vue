@@ -4,6 +4,7 @@ import Calculator from "@/components/Calculator.vue";
 </script>
 
 <template>
+  <html>
   <Header></Header>
   
   
@@ -11,7 +12,11 @@ import Calculator from "@/components/Calculator.vue";
     <Calculator />
   </main>
   <Footer></Footer>
-  <!-- <TheWelcome /> -->
+  
+  </html>
 </template>
+
+<style scoped>
+
 
 </style>
