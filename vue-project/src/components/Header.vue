@@ -1,5 +1,5 @@
 <template>
-  <header class="d-flex justify-content-center py-3 mb-8 border-bottom">
+  <header class="d-flex justify-content-center py-3 mb-8 ">
     <ul class="nav nav-pills">
       <li class="nav-item">
         <router-link to="/"><a href="#" class="nav-link">Calculator</a></router-link>

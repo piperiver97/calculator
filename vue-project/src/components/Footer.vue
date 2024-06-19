@@ -1,5 +1,5 @@
 <template>
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3   fixed-bottom">
     <div class="col-md-4 d-flex align-items-center p-2" >
       <span class="mb-3 mb-md-0" style="color:white;" >© 2024 Super Calculator Company, Inc</span>
     </div>
