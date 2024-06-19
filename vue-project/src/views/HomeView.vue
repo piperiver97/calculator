@@ -14,7 +14,4 @@ import Calculator from "@/components/Calculator.vue";
   <!-- <TheWelcome /> -->
 </template>
 
-<style>
-
-
 </style>
