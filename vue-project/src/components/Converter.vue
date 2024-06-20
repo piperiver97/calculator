@@ -81,9 +81,22 @@
   background-color: #93ddff;
   border-color: #93ddff;
   }  
+  h2{
+    text-align: center;
+  }
 
   h3{
     margin-top: 20px;
+    
   }
+  @media only screen and (max-width: 500px){
+    .currency-converter{
+      
+      max-width: 350px;
+
+    }
+
+    }
+  
   </style>
   

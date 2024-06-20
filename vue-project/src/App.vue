@@ -23,7 +23,7 @@ import Footer from "./components/Footer.vue";
 <style scoped>
 main{
   background-color: rgb(168, 168, 168);
-  height: 1250px;
+  height: 900px;
 }
 </style>
 

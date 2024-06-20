@@ -43,7 +43,6 @@ header {
 
 .nav-link {
   color: rgb(255, 255, 255);
-  text-decoration: none; 
   padding: 10px 15px;
 }
 
@@ -52,5 +51,8 @@ header {
   background-color: #93ddff;
   border-color: #93ddff;
   border-radius: 10px;
+}
+a{
+  text-decoration: none;
 }
 </style>
