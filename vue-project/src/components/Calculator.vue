@@ -1,47 +1,3 @@
-<template>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-6">
-        <div class="calculator card mt-5 mb-5">
-          <div class="card-body">
-            <input type="text" class="calculator-screen z-depth-1 form-control mb-3" v-model="display" disabled />
-            <div class="calculator-keys">
-              <div class="row mb-2 justify-content-center">
-                <button class="operator btn col m-1" @click="setOperation('+')">+</button>
-                <button class="operator btn col m-1" @click="setOperation('-')">-</button>
-                <button class="operator btn col m-1" @click="setOperation('*')">&times;</button>
-                <button class="operator btn col m-1" @click="setOperation('/')">&divide;</button>
-              </div>
-              <div class="row mb-2 justify-content-center">
-                <button class="btn btn-light col m-1" @click="appendNumber(7)">7</button>
-                <button class="btn btn-light col m-1" @click="appendNumber(8)">8</button>
-                <button class="btn btn-light col m-1" @click="appendNumber(9)">9</button>
-              </div>
-              <div class="row mb-2 justify-content-center">
-                <button class="btn btn-light col m-1" @click="appendNumber(4)">4</button>
-                <button class="btn btn-light col m-1" @click="appendNumber(5)">5</button>
-                <button class="btn btn-light col m-1" @click="appendNumber(6)">6</button>
-              </div>
-              <div class="row mb-2 justify-content-center">
-                <button class="btn btn-light col m-1" @click="appendNumber(1)">1</button>
-                <button class="btn btn-light col m-1" @click="appendNumber(2)">2</button>
-                <button class="btn btn-light col m-1" @click="appendNumber(3)">3</button>
-              </div>
-              <div class="row mb-2 justify-content-center">
-                <button class="decimal function btn col m-1" @click="appendNumber('.')">.</button>
-                <button class="btn btn-light col m-1" @click="appendNumber(0)">0</button>
-                <button class="all-clear function btn col m-1" @click="clearDisplay">AC</button>
-              </div>
-              <div class="row mb-2 justify-content-center">                
-                <button class="equal-sign operator btn col m-1 " @click="calculate">=</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
 <script>
 export default {
   data() {
@@ -94,9 +50,100 @@ export default {
   },
 };
 </script>
+<template>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <div class="calculator card mt-5 mb-5">
+          <div class="card-body">
+            <input
+              type="text"
+              class="calculator-screen z-depth-1 form-control mb-3"
+              v-model="display"
+              disabled
+            />
+            <div class="calculator-keys">
+              <div class="row mb-2 justify-content-center">
+                <button class="operator btn col m-1" @click="setOperation('+')">
+                  +
+                </button>
+                <button class="operator btn col m-1" @click="setOperation('-')">
+                  -
+                </button>
+                <button class="operator btn col m-1" @click="setOperation('*')">
+                  &times;
+                </button>
+                <button class="operator btn col m-1" @click="setOperation('/')">
+                  &divide;
+                </button>
+              </div>
+              <div class="row mb-2 justify-content-center">
+                <button class="btn btn-light col m-1" @click="appendNumber(7)">
+                  7
+                </button>
+                <button class="btn btn-light col m-1" @click="appendNumber(8)">
+                  8
+                </button>
+                <button class="btn btn-light col m-1" @click="appendNumber(9)">
+                  9
+                </button>
+              </div>
+              <div class="row mb-2 justify-content-center">
+                <button class="btn btn-light col m-1" @click="appendNumber(4)">
+                  4
+                </button>
+                <button class="btn btn-light col m-1" @click="appendNumber(5)">
+                  5
+                </button>
+                <button class="btn btn-light col m-1" @click="appendNumber(6)">
+                  6
+                </button>
+              </div>
+              <div class="row mb-2 justify-content-center">
+                <button class="btn btn-light col m-1" @click="appendNumber(1)">
+                  1
+                </button>
+                <button class="btn btn-light col m-1" @click="appendNumber(2)">
+                  2
+                </button>
+                <button class="btn btn-light col m-1" @click="appendNumber(3)">
+                  3
+                </button>
+              </div>
+              <div class="row mb-2 justify-content-center">
+                <button
+                  class="decimal function btn col m-1"
+                  @click="appendNumber('.')"
+                >
+                  .
+                </button>
+                <button class="btn btn-light col m-1" @click="appendNumber(0)">
+                  0
+                </button>
+                <button
+                  class="all-clear function btn col m-1"
+                  @click="clearDisplay"
+                >
+                  AC
+                </button>
+              </div>
+              <div class="row mb-2 justify-content-center">
+                <button
+                  class="equal-sign operator btn col m-1"
+                  @click="calculate"
+                >
+                  =
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
 <style scoped>
-
 .calculator {
   background-color: rgb(66, 66, 66);
   border-radius: 20px;
@@ -156,5 +203,4 @@ button {
   background-color: #4bade2;
   color: white;
 }
-
 </style>
